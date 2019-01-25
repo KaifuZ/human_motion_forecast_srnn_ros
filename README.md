@@ -1,5 +1,5 @@
 # human_motion_forecast_srnn_ros
-En|[中文](README_zh.md)
+En|[中文](README_CHINESE.md)
 
 ## Summary
    This repository is to realize a human motion predicion experient from paper called "Structural-RNN: Deep Learning on Spatio-Temporal Graphs" in CVPR-2016. S-RNN architecture follows the Spatio-Temporal-graph(st-graph). According to the st-graph, the spine interacts with all the body parts, and the arms and legs interact with each other. The st-graph is automatically transformed to S-RNN.
