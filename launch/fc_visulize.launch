@@ -1,0 +1,9 @@
+<launch>
+    <group ns="motion_forecast">
+        <param name="tf_prefix" value="pd_" />
+        <node pkg="human_motion_forecast_srnn" name="visualization" type="visualization.py" output="screen">
+            <remap from="motion" to="/motion_forecast"/> 
+        </node>
+    </group>
+    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find human_motion_forecast_srnn)/rviz/rviz.rviz"/>
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+    <rosparam command="load" file="$(find human_motion_forecast_srnn)/config/config.yaml"/>
+    <arg name="device" default="cpu"/>
+    <arg name="cp_path"/>
+    <param name="cp_path" value="$(arg cp_path)"/>
+    <env name="THEANO_FLAGS" value="floatX=float32,optimizer=None,device=$(arg device)"/>
+    <node pkg="human_motion_forecast_srnn" name="forecast" type="forecast.py" output="screen" />
+</launch>

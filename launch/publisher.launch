@@ -1,0 +1,5 @@
+<launch>
+    <arg name="ds_path"/>
+    <param name="ds_path" value="$(arg ds_path)"/>
+    <node pkg="human_motion_forecast_srnn" name="publisher" type="publisher.py" output="screen" />
+</launch>
